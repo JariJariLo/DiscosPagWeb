@@ -172,6 +172,54 @@
 
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-3 ">
+                            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                                 <div class="text-center">
+    
+                                 <img src="./lunatec.jpg" alt="">
+    
+                                </div>
+    
+                                <div class="card-body">
+                                    <h5 class="card-title">Disco title</h5>
+                                    <h5>ID:7854YT</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet,
+                                     consectetur adipiscing eli
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Reservar</a>
+    
+                                </div>
+                
+                              </div>
+    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-3 ">
+                                <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                                     <div class="text-center">
+        
+                                     <img src="./purgatorium.png" alt="">
+        
+                                    </div>
+        
+                                    <div class="card-body">
+                                        <h5 class="card-title">Disco title</h5>
+                                        <h5>ID:456RE</h5>
+                                        <p>
+                                        Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing eli
+                                        </p>
+                                        <a href="#" class="btn btn-primary"id="reservar">Reservar</a>
+        
+                                    </div>
+                    
+                                  </div>
+        
+                                </div>
+                            </div>
 
                 </div>
             </div>
