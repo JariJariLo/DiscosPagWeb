@@ -1,29 +1,51 @@
+<?php
+required_once("./php/myDBC.php");
+if(isset($_SESSION['session']))
+{
+    header("location:principal.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
-    <link rel="stylesheet" href="./styleLogin.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="./css/style.css" rel="stylesheet" />
 </head>
+ 
 <body>
-
-<div class="form-container">
-    <form action="validar.php" method="post">
-        <h1>Sistema de Login</h1>
-        <p>nombre<input type="text" placeholder="ingese su nombre" name="nombre" class="box">
-        <p>apellido1<input type="text" placeholder="ingese su primer apellido" name="apellido1" class="box">
-        <p>contraseña<input type="text" placeholder="ingese su contraseña" name="id" class="box">
-            <select name="user_type">
-                <option value="user">user</option>
-                <option value="admin">admin</option>
-            </select>
-        <input type="submit" name="submit" value="Login now" class="btn">
-        <p>ya tienes una cuenta</p>
-    </form>
-</div>
+ 
+    <div id="registrar">
+<a href="./php/registro.php"></a><a>Registrarse</a>
+</div> <!-- fin opcion-->
+ 
+    <div id="envoltura">
+        <div id="contenedor">
+ 
+            <div id="cabecera" >
+                <img src="./css/images/logo.gif">
+            </div>
+ 
+            <div id="cuerpo">
+                <form id="form-login" action="" method="post" autocomplete="off">
+                    <!--A saber, el atributo for funciona como el id.-->
+                    <!--ejemplo <label for="usuario">Usuario:</label>-->
+                    <!--required es nuevo en html5, si el campo está vacío te avisa, pero cuidado, no valida la información-->
+                    <p><label >Usuario:</label></p>
+                        <input name="usuario" type="text" id="usuario" placeholder="Ingresa Usuario" autofocus="" required=""></p>
+ 
+                    <p><label>Contraseña:</label></p>
+                        <input name="contrasenia" type="password" id="contrasenia" placeholder="Ingresa Password" required=""></p>
+ 
+                    <p id="bot"><input type="submit" id="submit" name="submit" value="Ingresar" class="boton"></p>
+                </form>
+            </div><!--fin cuerpo-->
+ 
+            <div id="pie">Sistema de Login Y Registro</div>
+        </div><!-- fin contenedor -->
+    </div><!--fin envoltura-->
 </body>
+ 
 </html>
+<div class="open_grepper_editor" title="Edit & Save To Grepper"></div>
