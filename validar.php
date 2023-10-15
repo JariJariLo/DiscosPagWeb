@@ -11,21 +11,9 @@ $contraseña=$_POST['id'];*/
   }
    else {
     // Manejar el error
-    die("Error: El campo 'paciente' no está definido en la solicitud.");
+    die("Error ");
        }
-   if (isset($_POST['apellido1'])) {
-    $apellido1 = $_POST['apellido1'];
- } else {
-    // Manejar el error
-    die("Error: El campo 'apellido1' no está definido en la solicitud.");
- }
- 
- if (isset($_POST['apellido2'])) {
-    $apellido2 = $_POST['apellido2'];
- } else {
-    // Manejar el error
-    die("Error: El campo 'apellido2' no está definido en la solicitud.");
- }
+
  
  if (isset($_POST['id'])) {
     $contraseña = $_POST['id'];
@@ -38,9 +26,9 @@ $contraseña=$_POST['id'];*/
 session_start();
 $_SESSION['paciente']=$paciente;
 //aqui teconectas con tus datos a la base de datos
-$conexion=mysqli_connect("localhost:3308","root","","doctores");
+$conexion=mysqli_connect("localhost:3308","root","","discos");
 //consulta sql la puedes modificar con los datos que quieras 
-$consulta="SELECT * from personasficha where nombre='$paciente' and id='$contraseña'";
+$consulta="SELECT * from usuarios where nombre='$paciente' and id='$contraseña'";
 $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);
@@ -52,7 +40,7 @@ header("location:home.php");
 
             ?>
             <?php
-            include("index.php");
+            include("");
             ?>
             <h1>ERROR DE AUTENTICACIÓN</h1>
             <?php  

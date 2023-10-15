@@ -30,7 +30,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
+                                <a class="nav-link" href="login.php">Login</a>
                             </li>
 
                             <li class="nav-item">
@@ -164,7 +164,7 @@
                                 Lorem ipsum dolor sit amet,
                                  consectetur adipiscing eli
                                 </p>
-                                <a href="#" class="btn btn-primary">Reservar</a>
+                                <a href="reservar.php" class="btn btn-primary">Reservar</a>
 
                             </div>
             
@@ -188,7 +188,7 @@
                                     Lorem ipsum dolor sit amet,
                                      consectetur adipiscing eli
                                     </p>
-                                    <a href="#" class="btn btn-primary">Reservar</a>
+                                    <a href="reservar.php" class="btn btn-primary">Reservar</a>
     
                                 </div>
                 
@@ -212,7 +212,7 @@
                                         Lorem ipsum dolor sit amet,
                                          consectetur adipiscing eli
                                         </p>
-                                        <a href="#" class="btn btn-primary"id="reservar">Reservar</a>
+                                        <a href="reservar.php" class="btn btn-primary"id="reservar">Reservar</a>
         
                                     </div>
                     
