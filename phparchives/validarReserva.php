@@ -34,13 +34,15 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_num_rows($resultado);
 //aqui si todo va bien te lleva a una pagina despues de loguearte en este caso es home.php la puedes modificar si quieres
 if($filas){
-header("location:index.php");
+   echo "Su pedido ha sido reservado . Recuerde :La reserva se pierde pasadas las 48 horas";
+
 }
         else{
 
             ?>
             <?php
-           echo "La reserva se pierde pasadas las 48 horas";
+            //header("location:index.php");
+
             ?>
             <h1>ERROR DE AUTENTICACIÓN</h1>
             <?php  
