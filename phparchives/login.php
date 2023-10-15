@@ -1,3 +1,22 @@
+<?php
+include 'conection.php';
+if (isset($_POST['submit'])){
+    $name=mysqli_real_escape_string($conn, $POST['nombre']);
+    $passw=mysqli_real_escape_string($conn, $POST['id']);
+
+    $select_users = mysqli_query($conn, "SELECT * FROM 'users' WHERE nombre=' $name' AND contraseña='$passw'") or die('fallo de la consulta');
+
+    if(mysqli_num_rows($select_users)>0){
+        $message[]='usuario existe!';
+
+    }else{
+        $message[]='registrese por favor!';
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,14 +34,10 @@
     <form action="validar.php" method="post">
         <h1>Sistema de Login</h1>
         <p>nombre<input type="text" placeholder="ingese su nombre" name="nombre" class="box">
-        <p>apellido1<input type="text" placeholder="ingese su primer apellido" name="apellido1" class="box">
         <p>contraseña<input type="text" placeholder="ingese su contraseña" name="id" class="box">
-            <select name="user_type">
-                <option value="user">user</option>
-                <option value="admin">admin</option>
-            </select>
+            
         <input type="submit" name="submit" value="Login now" class="btn">
-        <p>ya tienes una cuenta</p>
+        <p>ya tienes una cuenta?</p>
     </form>
 </div>
 </body>

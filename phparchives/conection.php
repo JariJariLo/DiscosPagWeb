@@ -1,11 +1,8 @@
 <?php
-$servername= "localhost";
-$username ="";
-$password="";
-$database="";
+
 
 //Creamos la conexion
-$conn = mysqli_connect($servername,$username,$password,$database);
+$conn = mysqli_connect("localhost:3308","root","","discos");
 
 //Verificamos la conexion
 if (!$conn){

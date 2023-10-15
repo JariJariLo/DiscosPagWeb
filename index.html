@@ -130,70 +130,55 @@
         </div> 
                 
         
-        <section class="services">
+        <section class="products">
 
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-lg-4 mb-3">
-                        <div class="card text-white text-center bg-car1 pb-2">
-                            <div class="disco-body">
-                                <h3 class="disco-title">Artistas Famosos</h3>
+                    <div class="col-md-12 ">
+                        <div class="secction-header text-center pb-5">
+                                <h2>Productos</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit
+                                   Las reservas solo duran 48 horas desde que las reservas 
 
                                 </p>
-                                    <button class="btn bg-primary text-black" >Leer más</button>
-                            </div>
+        
+
+                          </div>
 
                         </div>
-
                     </div>
 
-                    <div class="col-12 col-md-12 col-lg-4 mb-3">
-                        <div class="card text-white text-center bg-car2 pb-2">
-                            <div class="disco-body">
-                                <h3 class="disco-title">Género musicales</h3>
+                    <div class="row">
+                    <div class="col-12 col-md-12 col-lg-3 ">
+                        <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                             <div class="text-center">
+
+                             <img src="./frequencies.jpg" alt="">
+
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Disco title</h5>
+                                <h5>ID:765ER</h5>
                                 <p>
-                                    Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit
-
+                                Lorem ipsum dolor sit amet,
+                                 consectetur adipiscing eli
                                 </p>
-                                    <button class="btn bg-primary text-black" >Leer más</button>
+                                <a href="#" class="btn btn-primary">Reservar</a>
+
                             </div>
+            
+                          </div>
 
                         </div>
-
                     </div>
 
-                    <div class="col-12 col-md-12 col-lg-4 mb-3">
-                        <div class="card text-white text-center bg-car3 pb-2">
-                            <div class="disco-body">
-                                <h3 class="disco-title">Dicos más antiguos</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit
-
-                                </p>
-                                    <button class="btn bg-primary text-black" >Leer más</button>
-                            </div>
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
 
         </section>
    
 
-        <section class="product">
-            <div class="">
-
-
-            </div>
-
-        </section>
 
      
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
