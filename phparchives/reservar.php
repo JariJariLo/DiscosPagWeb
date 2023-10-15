@@ -4,7 +4,7 @@ if (isset($_POST['submit'])){
     $name=mysqli_real_escape_string($conn, $POST['nombre']);
     $passw=mysqli_real_escape_string($conn, $POST['id']);
 
-    $select_users = mysqli_query($conn, "SELECT * FROM 'reservas' WHERE nombre=' $name' AND id='$passw'") or die('fallo de la consulta');
+    $select_users = mysqli_query($conn, "SELECT * FROM 'reservas' WHERE nombre='$name' AND id='$passw'") or die('fallo de la consulta');
 
     if(mysqli_num_rows($select_users)>0){
         $message[]='reserva existe!';
@@ -31,8 +31,8 @@ if (isset($_POST['submit'])){
 <body>
 
 <div class="form-container">
-    <form action="validar.php" method="post">
-        <h1>Sistema de Login</h1>
+    <form action="validarReserva.php" method="post">
+        <h1>RESERVAS</h1>
         <p>nombre<input type="text" placeholder="ingese su nombre de usuario" name="nombre" class="box">
         <p>id<input type="text" placeholder="id del disco que quiere reservar" name="id" class="box">
             

@@ -2,7 +2,7 @@
 include 'conection.php';
 if (isset($_POST['submit'])){
     $name=mysqli_real_escape_string($conn, $POST['nombre']);
-    $passw=mysqli_real_escape_string($conn, $POST['id']);
+    $passw=mysqli_real_escape_string($conn, $POST['contraseña']);
 
     $select_users = mysqli_query($conn, "SELECT * FROM 'users' WHERE nombre=' $name' AND contraseña='$passw'") or die('fallo de la consulta');
 
@@ -34,7 +34,7 @@ if (isset($_POST['submit'])){
     <form action="validar.php" method="post">
         <h1>Sistema de Login</h1>
         <p>nombre<input type="text" placeholder="ingese su nombre" name="nombre" class="box">
-        <p>contraseña<input type="text" placeholder="ingese su contraseña" name="id" class="box">
+        <p>contraseña<input type="text" placeholder="ingese su contraseña" name="contraseña" class="box">
             
         <input type="submit" name="submit" value="Login now" class="btn">
         <p>ya tienes una cuenta?</p>
