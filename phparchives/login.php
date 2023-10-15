@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <link rel="stylesheet" href="./styleLogin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -13,11 +15,14 @@
     <form action="validar.php" method="post">
         <h1>Sistema de Login</h1>
         <p>nombre<input type="text" placeholder="ingese su nombre" name="nombre" class="box">
-        <p>apellido1<input type="text" placeholder="ingese su primer apellido" name="apellido1">
-        <p>apellido2<input type="text" placeholder="ingese su segundo apellido" name="apellido2">
-        <p>contraseña<input type="text" placeholder="ingese su contraseña" name="id">
-
-        <input type="submit" value="Ingresar">
+        <p>apellido1<input type="text" placeholder="ingese su primer apellido" name="apellido1" class="box">
+        <p>contraseña<input type="text" placeholder="ingese su contraseña" name="id" class="box">
+            <select name="user_type">
+                <option value="user">user</option>
+                <option value="admin">admin</option>
+            </select>
+        <input type="submit" name="submit" value="Login now" class="btn">
+        <p>ya tienes una cuenta</p>
     </form>
 </div>
 </body>
